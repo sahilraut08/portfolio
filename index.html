@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Sahil Raut</title>
+
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/apple-touch-icon.png"
+    />
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "sd6ZqjnUtMtA2Bjte",
+        });
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); 
+            const templateParams = {
+              name: this.name.value,
+              email: this.email.value,
+              message: this.message.value,
+            };
+
+            emailjs
+              .send("service_fr7ep22", "template_i2f7ice", templateParams)
+              .then(
+                function (response) {
+                  alert("Email sent successfully!");
+                },
+                function (error) {
+                  alert("Failed to send email. Please try again.");
+                  console.log("Failed to send email:", error);
+                }
+              );
+          });
+      };
+    </script>
+
+  </head>
+  <body>
+    <header
+      id="masthead"
+      class="site-header"
+      data-anchor-target=".hero"
+      data-top="background: rgba(255,255,255,0); padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);"
+      data-top-bottom="background: rgba(255,255,255,1); padding: 10px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);"
+    >
+      <nav id="primary-navigation" class="site-navigation">
+        <div class="container">
+          <div class="navbar-header page-scroll">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-target="#portfolio-perfect-collapse"
+              aria-expanded="false"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a href="#hero" class="site-logo"
+              ><img src="assets/img/apple-touch-icon.png" alt="logo"
+            /></a>
+          </div>
+
+          <div class="main-menu" id="portfolio-perfect-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="page-scroll"><a href="#hero">Home</a></li>
+              <li class="page-scroll"><a href="#about">About</a></li>
+              <li class="page-scroll"><a href="#service">Service</a></li>
+              <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
+              <li class="page-scroll"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div id="hero" class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Sahil Raut</h1>
+            <div class="page-scroll">
+              <p class="job-title">Software Engineer | Full Stack Developer</p>
+              <p class="job-sub-title">
+                Masters in Computer Science @ USC (2025 Grad)
+              </p>
+              <p class="job-sub-title sub-title">
+                Software and Data Engineer @ USC Information Technology Services
+              </p>
+              <a href="#contact" class="btn btn-fill">Hire me</a>
+              <div class="clearfix visible-xxs"></div>
+              <a target="_blank" href="https://www.linkedin.com/in/sahilraut8/" class="btn btn-border">Linkedin</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 text-right">
+            <img
+              class="my-image"
+              src="assets/img/sahilraut.png"
+              alt="alex-vidal"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main id="main" class="site-main">
+      <section id="about" class="site-section section-about text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <h2>About</h2>
+              <img src="assets/img/lines.svg" class="img-lines" alt="lines" />
+              <p>
+                Hello! I'm Sahil Raut, a passionate software engineer currently
+                pursuing my Master’s in Computer Science at the University of
+                Southern California. With a strong foundation in full-stack
+                development, cloud computing, and machine learning, I enjoy
+                solving complex problems and building scalable solutions. My
+                experiences range from leading teams in student organizations to
+                working on advanced technical projects like multimodal machine
+                learning systems. I’m driven by a desire to continuously learn
+                and innovate, making an impact in the tech world through
+                creativity and collaboration.
+              </p>
+              <a
+                href="https://drive.google.com/file/d/1moEPAEFkSWgvi24xpnqg_jOU1bfeMyhG/view?usp=sharing"
+                class="btn btn-fill"
+                target="_blank"
+                download
+                >Download my Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.secton-about -->
+
+      <section class="site-section section-skills">
+        <div class="container">
+          <div class="text-center">
+            <h3>My Skills</h3>
+            <img src="assets/img/lines.svg" class="img-lines" alt="lines" />
+          </div>
+          <div class="row" style="margin-bottom: 3em">
+            <div class="col-md-4">
+              <div class="skill">
+                <h4>Javascript</h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-transitiongoal="96"
+                  ></div>
+                  <!-- /.progress-bar -->
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.skill -->
+              <div class="skill">
+                <h4>React Js</h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-transitiongoal="100"
+                  ></div>
+                  <!-- /.progress-bar -->
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.skill -->
+            </div>
+            <div class="col-md-4">
+              <div class="skill">
+                <h4>Python</h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-transitiongoal="90"
+                  ></div>
+                  <!-- /.progress-bar -->
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.skill -->
+              <div class="skill">
+                <h4>Node Js</h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-transitiongoal="94"
+                  ></div>
+                  <!-- /.progress-bar -->
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.skill -->
+            </div>
+            <div class="col-md-4">
+              <div class="skill">
+                <h4>Java</h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-transitiongoal="85"
+                  ></div>
+                  <!-- /.progress-bar -->
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.skill -->
+              <div class="skill">
+                <h4>Typescript</h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-transitiongoal="88"
+                  ></div>
+                  <!-- /.progress-bar -->
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.skill -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="skill">
+                <h4>AWS(S3,EC2)</h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-transitiongoal="90"
+                  ></div>
+                  <!-- /.progress-bar -->
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.skill -->
+              <div class="skill">
+                <h4>MongoDB</h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-transitiongoal="88"
+                  ></div>
+                  <!-- /.progress-bar -->
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.skill -->
+            </div>
+            <div class="col-md-4">
+              <div class="skill">
+                <h4>Terraform</h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-transitiongoal="90"
+                  ></div>
+                  <!-- /.progress-bar -->
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.skill -->
+              <div class="skill">
+                <h4>MySQL</h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-transitiongoal="94"
+                  ></div>
+                  <!-- /.progress-bar -->
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.skill -->
+            </div>
+            <div class="col-md-4">
+              <div class="skill">
+                <h4>Jenkins</h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-transitiongoal="85"
+                  ></div>
+                  <!-- /.progress-bar -->
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.skill -->
+              <div class="skill">
+                <h4>DynamoDB</h4>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-transitiongoal="82"
+                  ></div>
+                  <!-- /.progress-bar -->
+                </div>
+                <!-- /.progress -->
+              </div>
+              <!-- /.skill -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.secton-skills -->
+
+      <section
+        id="service"
+        class="site-section section-services overlay text-center"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3>What i do</h3>
+              <img src="assets/img/lines.svg" class="img-lines" alt="lines" />
+            </div>
+            <div class="col-sm-4">
+              <div class="service">
+                <img src="assets/img/front-end.svg" alt="Front End Developer" />
+                <h4>DEVELOP</h4>
+                <p>
+                  Enjoy building innovative solutions to tackle real-life
+                  problems through technology and creativity.
+                </p>
+              </div>
+              <!-- /.service -->
+            </div>
+            <div class="col-sm-4">
+              <div class="service">
+                <img src="assets/img/back-end.svg" alt="Back End Developer" />
+                <h4>EXPLORE</h4>
+                <p>
+                  Have a passion for exploring new technologies and trends to
+                  continuously grow and stay at the forefront of innovation.
+                </p>
+              </div>
+              <!-- /.service -->
+            </div>
+            <div class="col-sm-4">
+              <div class="service">
+                <img src="assets/img/consultancy.svg" alt="Coding" />
+                <h4>ADVENTURE</h4>
+                <p>
+                  Loves going on adventures, listening to music, and playing
+                  sports to stay active and energized.
+                </p>
+              </div>
+              <!-- /.service -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.secton-services -->
+
+      <section id="portfolio" class="site-section section-portfolio">
+        <div class="container">
+          <div class="text-center">
+            <h3>My recent Works</h3>
+            <img src="assets/img/lines.svg" class="img-lines" alt="lines" />
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-xs-6">
+              <div class="portfolio-item">
+                <img src="assets/img/portfolio-1.jpg" class="img-res" alt="" />
+                <div class="portfolio-item-info">
+                  <h4>Stock Assistant</h4>
+                  <a href="#" data-toggle="modal" data-target="#portfolioItem1"
+                    ><span class="glyphicon glyphicon-eye-open"></span
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://assignment-3-client.wl.r.appspot.com/search/home"
+                    ><span class="glyphicon glyphicon-link"></span
+                  ></a>
+                </div>
+                <!-- /.portfolio-item-info -->
+              </div>
+              <!-- /.portfolio-item -->
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <div class="portfolio-item">
+                <img src="assets/img/portfolio-2.jpg" class="img-res" alt="" />
+                <div class="portfolio-item-info">
+                  <h4>Multimodal Laughter Detection</h4>
+                  <a href="#" data-toggle="modal" data-target="#portfolioItem2"
+                    ><span class="glyphicon glyphicon-eye-open"></span
+                  ></a>
+                  <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                </div>
+                <!-- /.portfolio-item-info -->
+              </div>
+              <!-- /.portfolio-item -->
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <div class="portfolio-item">
+                <img src="assets/img/portfolio-3.jpg" class="img-res" alt="" />
+                <div class="portfolio-item-info">
+                  <h4>College Students Portal</h4>
+                  <a href="#" data-toggle="modal" data-target="#portfolioItem3"
+                    ><span class="glyphicon glyphicon-eye-open"></span
+                  ></a>
+                  <a target="_blank" href="https://portal.siesgst.ac.in/"
+                    ><span class="glyphicon glyphicon-link"></span
+                  ></a>
+                </div>
+                <!-- /.portfolio-item-info -->
+              </div>
+              <!-- /.portfolio-item -->
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <div class="portfolio-item">
+                <img src="assets/img/portfolio-4.jpg" class="img-res" alt="" />
+                <div class="portfolio-item-info">
+                  <h4>Crowd Funding Application</h4>
+                  <a href="#" data-toggle="modal" data-target="#portfolioItem4"
+                    ><span class="glyphicon glyphicon-eye-open"></span
+                  ></a>
+                  <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                </div>
+                <!-- /.portfolio-item-info -->
+              </div>
+              <!-- /.portfolio-item -->
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <div class="portfolio-item">
+                <img src="assets/img/portfolio-5.jpg" class="img-res" alt="" />
+                <div class="portfolio-item-info">
+                  <h4>Potato Leaf Disease Detection</h4>
+                  <a href="#" data-toggle="modal" data-target="#portfolioItem5"
+                    ><span class="glyphicon glyphicon-eye-open"></span
+                  ></a>
+                  <!-- <a href="#"><span class="glyphicon glyphicon-link"></span></a> -->
+                </div>
+                <!-- /.portfolio-item-info -->
+              </div>
+              <!-- /.portfolio-item -->
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <div class="portfolio-item">
+                <img src="assets/img/portfolio-6.jpg" class="img-res" alt="" />
+                <div class="portfolio-item-info">
+                  <h4>Alumni Connect Application</h4>
+                  <a href="#" data-toggle="modal" data-target="#portfolioItem6"
+                    ><span class="glyphicon glyphicon-eye-open"></span
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://alumniportal.siesgst.ac.in/login"
+                    ><span class="glyphicon glyphicon-link"></span
+                  ></a>
+                </div>
+                <!-- /.portfolio-item-info -->
+              </div>
+              <!-- /.portfolio-item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.secton-portfolio -->
+
+      <section class="site-section section-counters text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-xs-12">
+              <p class="counter start" data-to="6" data-speed="2000">0</p>
+              <h4>Years of Coding Experience</h4>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <p class="counter start" data-to="100000" data-speed="2000">0</p>
+              <h4>Lines of Code</h4>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <p
+                id="infinity"
+                class="counter"
+                data-from="0"
+                data-to="1"
+                data-speed="1000"
+              >
+                0
+              </p>
+              <h4>Seconds on this site!<br />What are you waiting for?</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.section-counters -->
+
+      <section id="contact" class="site-section section-form text-center">
+        <div class="container">
+          <h3>Contact</h3>
+          <img src="assets/img/lines.svg" class="img-lines" alt="lines" />
+          <form id="contact-form">
+            <div class="row">
+              <div class="col-sm-6">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control mt-x-0"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="col-sm-6">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="col-sm-12">
+                <textarea
+                  name="message"
+                  id="mesaage"
+                  class="form-control"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <button href="#" class="btn btn-border" type="submit">
+              Hire Me <span class="glyphicon glyphicon-send"></span>
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- /.section-form -->
+    </main>
+    <!-- /#main -->
+
+    <footer id="colophon" class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-xs-12">
+            <a class="icon facebook-bg" href="#"
+              ><i class="icon-facebook"></i
+            ></a>
+            <a class="icon twitter-bg" href="#"><i class="icon-twitter"></i></a>
+            <a class="icon gplus-bg" href="#"><i class="icon-linkedin"></i></a>
+            <a class="icon linkedin-bg" href="#"><i class="icon-gplus"></i></a>
+          </div>
+          <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3">
+            <p class="copyright">2017. All Rights Reserved</p>
+          </div>
+          <div class="col-sm-4 col-xs-3">
+            <div class="text-right page-scroll">
+              <a class="icon icon-up-bg" href="#hero"
+                ><i class="icon-up"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /#footer -->
+
+    <!-- Modals -->
+    <div id="portfolioItem1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"
+              ><span class="glyphicon glyphicon-remove"></span
+            ></a>
+            <img class="img-res" src="assets/img/portfolio-1.jpg" alt="" />
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">Stock Assistant</h4>
+            <p style="font-style: italic; font-weight: bold">
+              Stack : MongoDB, TypeScript, ReactJS, NodeJS, Swift UI, BERT, AWS
+            </p>
+            <p>
+              This project aimed to create a user-friendly stock portfolio
+              management tool. It allowed users to track and manage their
+              investments easily. The application provided real-time updates on
+              portfolio performance and security, ensuring that users always had
+              the latest information. One of the standout features was its
+              ability to analyze news and social media trends. By examining
+              these sources, the system offered valuable insights that helped
+              users understand market sentiment and make better investment
+              decisions. This resulted in a noticeable improvement in the
+              accuracy of portfolio management decisions. Moreover, the system
+              was built to be reliable and cost-effective. It was designed to
+              handle large amounts of data and traffic without interruptions,
+              ensuring that users had continuous access to their information,
+              even during peak times.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a
+              target="_blank"
+              href="https://assignment-3-client.wl.r.appspot.com/search/home"
+              class="btn btn-fill"
+              >Visit Page</a
+            >
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div id="portfolioItem2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"
+              ><span class="glyphicon glyphicon-remove"></span
+            ></a>
+            <img class="img-res" src="assets/img/portfolio-2.jpg" alt="" />
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">Multimodal Laughter Detection</h4>
+            <p style="font-style: italic; font-weight: bold">
+              Stack : Python, Hubert, Marlin
+            </p>
+            <p>
+              This project was designed to create a system that could accurately
+              detect and classify laughter by analyzing both audio and video
+              data. The goal was to improve how machines understand human
+              emotions and behaviors in multimedia content. To achieve this, the
+              system integrated two models: Hubert for analyzing audio signals
+              and Marlin for processing video data. By employing a technique
+              called late fusion, which combines the results from both audio and
+              video analysis, the system was able to significantly enhance its
+              overall accuracy. While analyzing audio alone gave an accuracy of
+              40.37% and video alone achieved 83.85%, the fusion of both
+              modalities resulted in a much higher accuracy of 87.08%. The
+              impact of this project lies in its ability to improve the way
+              machines interpret non-verbal communication, such as laughter.
+              This has potential applications in areas like entertainment,
+              virtual assistants, and human-computer interaction, where
+              understanding emotional cues can enhance user experiences.
+            </p>
+          </div>
+          <!-- <div class="modal-footer">
+            <a href="#" class="btn btn-fill">Visit Page</a>
+          </div> -->
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div id="portfolioItem3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"
+              ><span class="glyphicon glyphicon-remove"></span
+            ></a>
+            <img class="img-res" src="assets/img/portfolio-3.jpg" alt="" />
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">College Students Portal</h4>
+            <p style="font-style: italic; font-weight: bold">
+              Stack : MongoDB, ReactJS, NodeJS, Kotlin, Swift UI, AWS
+            </p>
+            <p>
+              Built a scalable website and mobile application using the MERN
+              stack (MongoDB, Express.js, React.js, Node.js) and Kotlin catering
+              to 2,000+ college students. This platform fostered a community and
+              effectively communicated campus events with 80% improved website
+              performance and reduced latency. <br />
+              Technical Highlights: <br />
+              Single Sign-On (SSO): Implemented Google Auth & Microsoft Oauth
+              API for secure login using college IDs (Google & .edu),
+              streamlining user experience. <br />
+              Cloud Infrastructure as Code (IaC): Designed infrastructure on
+              Terraform, enabling automated deployment, versioning, and cloud
+              portability. <br />
+              UI/UX Design: Focused on user experience through design and
+              usability testing. <br />
+              Data-Driven Promotions: Leveraged data analytics to understand
+              user trends and promote relevant events to students, while also
+              providing student trend insights for teachers to better understand
+              student needs and address queries.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a
+              target="_blank"
+              href="https://portal.siesgst.ac.in/"
+              class="btn btn-fill"
+              >Visit Page</a
+            >
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div id="portfolioItem4" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"
+              ><span class="glyphicon glyphicon-remove"></span
+            ></a>
+            <img class="img-res" src="assets/img/portfolio-4.jpg" alt="" />
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">Crowd Funding Application</h4>
+            <p style="font-style: italic; font-weight: bold">
+              Stack : MongoDB, ReactJS, NodeJS, Web3JS, Solidity, Metamask,
+              Truffle
+            </p>
+            <p>
+              A crowdfunding platform so that startups might get significant
+              money for their initiatives from potential investors. Using
+              blockchain technologies like Solidity, Web3JS, Metamask, Truffle,
+              and Ganache-CLI, created a transparent and secure payment process.
+              For payment across multiple networks, the blockchain Interledger
+              protocol was used. This protocol will eliminate middlemen,
+              resulting in a secure, decentralized, and cross-border interbank
+              payments network. The transaction data has been modelled to
+              include parameters such as transaction id, current block hash, and
+              preceding block hash.
+            </p>
+          </div>
+          <!-- <div class="modal-footer">
+            <a href="#" class="btn btn-fill">Visit Page</a>
+          </div> -->
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div id="portfolioItem5" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"
+              ><span class="glyphicon glyphicon-remove"></span
+            ></a>
+            <img class="img-res" src="assets/img/portfolio-5.jpg" alt="" />
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">Potato Leaf Disease Detection</h4>
+            <p>
+              This project involved developing a mobile application using
+              Flutter to help detect abnormalities in plants or leaves at
+              different stages of growth. The app was designed to assist farmers
+              or gardeners in identifying potential diseases early, preventing
+              crop damage and improving plant health. A Convolutional Neural
+              Network (CNN) model was built to analyze images of plants and
+              accurately detect signs of disease. The model was trained on
+              various stages of plant growth, enabling it to recognize
+              abnormalities with an accuracy of 94.9%. The impact of this
+              project lies in its practical application for agriculture. By
+              providing an easy-to-use tool for early disease detection, the app
+              can help users make timely decisions to treat plants, reducing
+              crop losses and improving yields. This kind of technology can be
+              especially useful for improving efficiency in farming practices.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <!-- <a href="#" class="btn btn-fill">Visit Page</a> -->
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div id="portfolioItem6" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a class="close" data-dismiss="modal"
+              ><span class="glyphicon glyphicon-remove"></span
+            ></a>
+            <img class="img-res" src="assets/img/portfolio-6.jpg" alt="" />
+          </div>
+          <div class="modal-body">
+            <h4 class="modal-title">Alumni Connect Application</h4>
+            <p>
+              This project aimed to create a platform that connects college
+              students with over 10,000 alumni for sharing knowledge,
+              experiences, and career advice. Using the MERN stack (MongoDB,
+              Express, React, and Node.js), Sahil developed a website that
+              enabled students to reach out to alumni in various fields,
+              fostering a community of mentorship and collaboration. One of the
+              key features was an algorithm designed to match students with
+              alumni who shared similar interests and career paths. This
+              personalized approach made it easier for students to find mentors
+              who could guide them based on relevant experiences and expertise.
+              To ensure the platform was robust and reliable, Sahil implemented
+              CI/CD pipelines, which automatically integrated and deployed new
+              code updates to the live server. This allowed the system to
+              function smoothly with real-time improvements and bug fixes. The
+              impact of this project lies in its ability to bridge the gap
+              between current students and alumni, promoting knowledge exchange
+              and creating valuable mentoring relationships. It enhanced
+              networking opportunities and gave students a direct line to advice
+              and guidance from professionals in their fields.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a
+              target="_blank"
+              href="https://alumniportal.siesgst.ac.in/login"
+              class="btn btn-fill"
+              >Visit Page</a
+            >
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
